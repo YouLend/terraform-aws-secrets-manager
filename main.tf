@@ -26,6 +26,7 @@ resource "aws_secretsmanager_secret_version" "sm-sv" {
   lifecycle {
     ignore_changes = [
       secret_id,
+      secret_string
     ]
   }
 }
